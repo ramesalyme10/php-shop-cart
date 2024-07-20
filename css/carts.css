@@ -1,0 +1,66 @@
+.header-table{
+    max-width: 1200px;
+    margin: 5rem auto;
+}
+
+.header-table tbody{
+    cursor: pointer;
+}
+
+.header-table tbody td img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.header-table tbody .cart-text{
+    max-width: 300px;
+    opacity: .6;
+    line-height: 1.8;
+}
+
+.header-table .cart-quantity {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #c0c0c0;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.header-table .cart-increment,.header-table .cart-decrement{
+    font-size: 20px;
+}
+
+.header-table tbody i{
+    color: #f63440;
+}
+.header-table tbody .price{
+    font-weight: bold;
+}
+
+
+
+/* .header-table .header-table-content a{
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+.header-table .header-table-content a:hover{
+    display: inline-block;
+    background: transparent;
+    color: #000000;
+    border: 1px solid #444;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 3px;
+    
+} */
+
+.header-table #input_qty{
+    max-width: 50px;
+}
+

@@ -1,0 +1,69 @@
+.our-story{
+    margin: 6rem 0 6rem 0;
+}
+
+.about .header-about{
+    text-align: center;
+    padding: 8px;
+    background: #f0f0f0;
+}
+
+.about .header-about a{
+    color: #000;
+    text-decoration: none;
+}
+
+.about .about-our-story{
+    max-width: 980px;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.about .about-our-story h2{
+    font-size: 70px;
+    color: #0e1f24;
+    text-transform: uppercase;
+}
+
+.about .about-our-story p{
+    opacity: .8;
+    font-size: 28px;
+    margin: 2rem 0 2rem 0;
+}
+
+.about .card{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.about .card .card-body{
+    position: absolute;
+    top: 20%;
+    right: 0;
+    left: 0;
+    text-align: center;
+    transition: .6s ease-in-out;
+    transform: translateY(0);
+    opacity: 0;
+}
+.about .card:hover .card-body{
+    position: absolute;
+    top: 20%;
+    right: 0;
+    left: 0;
+    text-align: center;
+    transition: .6s ease-in-out;
+    transform: translateY(40px);
+    opacity: 1;
+}
+
+.about .card .card-body button{
+    background: #9F78FF;
+    padding: 12px 40px;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    text-transform: uppercase;
+}
+

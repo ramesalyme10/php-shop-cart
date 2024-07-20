@@ -1,0 +1,241 @@
+.shop{
+    position: relative;
+    background-image:linear-gradient(
+        to bottom,
+        rgba(52, 54, 67, 0.52),
+        rgba(45, 35, 43, 0.73)
+      ), url(../assets/images.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+.shop .shop-content{
+   position: absolute;
+   top: 50%;
+   right: 0;
+   left: 0;
+   text-align: center;
+   cursor: pointer;
+}
+
+.shop .shop-content h1{
+    font-size: 50px;
+    color: #fffcfc;
+    margin-bottom: 2rem;
+}
+.shop .shop-content p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    font-style: italic;
+}
+
+/* products */
+
+.products,.products .products-content{
+    margin: 6rem 0 4rem 0;
+    padding: 20px;
+}
+
+.products,.products .products-content img{
+    width: 100%;
+    height: auto;
+}
+.products .products-center-text{
+    text-align: center;
+    cursor: pointer;
+}
+
+.products .products-center-text h3{
+    font-size: 35px;
+    margin-bottom: 12px;
+    color: #2c2828;
+}
+
+.products .products-center-text p{
+    font-style: italic;
+    opacity: .5;
+}
+
+.products .products-content .products-grid-3{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.products .products-title-rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.products .products-title-rating h2{
+    font-size: 16px;
+}
+
+.products .card{
+    position: relative;
+    overflow: hidden;
+}
+
+.products .card-body-icons{
+    position: absolute;
+    top: 60%;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.products .card  i{
+    padding: 0 12px;
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    margin: 8px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    transition: .5s ease-in-out;
+    transform: translateY(100px);
+    opacity: 0;
+}
+.products .card:hover  i{
+    padding: 0 12px;
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    transition: .5s ease-in-out;
+    transform: translateY(0);
+    opacity: 2;
+}
+
+.products .card button{
+    padding: 0 12px;
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    margin: 8px;
+    border: none !important;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    transition: .5s ease-in-out;
+    transform: translateY(100px);
+    opacity: 0;
+}
+.products .card:hover button{
+    padding: 0 12px;
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border: none !important;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    transition: .5s ease-in-out;
+    transform: translateY(0);
+    opacity: 2;
+}
+
+.products .card-body-icons a{
+    color: #000;
+}
+
+.products .products-price span{
+    font-weight: 700;
+    color: #000;
+}
+
+.products-search-products form{
+    display: flex;
+    align-items: center;
+   
+}
+.products-search-products form input{
+    width: 100%;
+    margin: 2rem 0 2rem 0;
+    padding: 15px;
+    border: 1px solid #cfc6c6;
+    outline: none;
+    
+}
+
+.products-search-products  button{
+    padding: 15px 25px;
+    background: #000;
+    color: #ffffff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.header-form .header-post{
+    max-width: 500px;
+    margin: 5rem auto;
+    text-align: center;
+   
+}
+
+
+
+
+.products .products-content .products-grid-3 .card img{
+    width: 100%;
+    height: 500px;
+}
+
+
+.products .form-control{
+    width: 50%;
+    
+}
+
+
+
+
+
+@media (max-width:1200px) {
+    .products .products-content .products-grid-3{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+}
+@media (max-width:992px) {
+    .products .products-content .products-grid-3{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+@media (max-width:768px) {
+    .products .products-content .products-grid-3{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+}
